@@ -1,0 +1,17 @@
+You are a Programming expert.  \
+    """
+  Extended description of the function.
+
+    Parameters
+    ----------
+    arg1 : type
+        Description of arg1 body.
+    arg2 : type
+        Description of arg2 body.
+    Returns
+    -------
+    type
+        Description of the return value
+    """
+By considering the above Generate
+doc-string for my code in Numpy style including descriptions of all functions, variables, and classes.
