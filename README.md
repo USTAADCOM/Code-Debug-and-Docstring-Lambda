@@ -23,6 +23,10 @@ Payload
       "code" : "Your code here",
     }
 ```
+Note: code structure Should be
+```code
+"def get_noun(paragraph, model = \"gpt-3.5-turbo\"):\n    prompt = make_prompt(paragraph)\n    messages = [{\"role\": \"user\", \"content\": prompt}]\n    response = openai.ChatCompletion.create(\n        model=\"gpt-3.5-turbo\",\n        messages = messages,\n        temperature = 1, # this is the degree of randomness of the model's output\n    )\n    return response.choices[0].message[\"content\"]"
+``` 
 Response 
 ```code
     {
@@ -30,3 +34,8 @@ Response
       'body': "Code with requested type"
     }
 ```
+## Local Test Run
+```code
+python driver.py
+```
+Note: Change payload according to the need.
